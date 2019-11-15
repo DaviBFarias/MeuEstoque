@@ -45,7 +45,7 @@ const HomePage: React.FC = () => {
             <IonListHeader>
               <IonLabel>Acesso Rápido</IonLabel>
             </IonListHeader>
-            <IonItem routerLink="home/list" routerDirection="none">
+            <IonItem routerLink="home/produtos" routerDirection="none">
               <IonIcon slot="start" color="medium" icon={book} />
               <IonLabel>Buscar joias</IonLabel>
             </IonItem>
