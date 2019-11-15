@@ -1,13 +1,21 @@
 .welcome-card img {
-  max-height: 25vh;
+  max-height: 18vh;
   overflow: hidden;
+  background-color: antiquewhite;
+  padding: 1.5vh 0 1.5vh 0;
 }
 
-.topo IonTitle{
-  float: left;
+.listaTitulo{
+  background-color: antiquewhite;
+}
+
+.lblListaTitulo {
+  margin: auto;
+  font-size: large;
 }
 
 .topo img{
   max-height: 5vh;
   float: right;
+  margin-right: 2vh;
 }

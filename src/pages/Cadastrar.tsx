@@ -2,7 +2,7 @@ import { IonButtons, IonContent, IonHeader, IonIcon, IonItem, IonList, IonMenuBu
 import { americanFootball, basketball, beer, bluetooth, boat, build, flask, football, paperPlane, wifi, addCircle } from 'ionicons/icons';
 import React from 'react';
 
-const ListPage: React.FC = () => {
+const CastrarPage: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -51,4 +51,4 @@ const ListItems = () => {
   return <IonList>{items}</IonList>;
 };
 
-export default ListPage;
+export default CastrarPage;

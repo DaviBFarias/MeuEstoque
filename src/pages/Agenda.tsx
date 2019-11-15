@@ -1,8 +1,22 @@
 import { IonButtons, IonContent, IonHeader, IonIcon, IonItem, IonList, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { americanFootball, basketball, beer, bluetooth, boat, build, flask, football, paperPlane, wifi } from 'ionicons/icons';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
-const ListPage: React.FC = () => {
+const AgendaPage: React.FC = () => {
+
+  const [courses, setData] = useState([]);
+  
+  useEffect(() => {
+    axios.get('https://api.balta.io/v1/courses')
+      .then(res => {
+        setData(res.data);
+      })
+      .catch(err => {
+        console.log(err);
+      })
+  },[]);
+
   return (
     <IonPage>
       <IonHeader>
@@ -50,4 +64,4 @@ const ListItems = () => {
   return <IonList>{items}</IonList>;
 };
 
-export default ListPage;
+export default AgendaPage;

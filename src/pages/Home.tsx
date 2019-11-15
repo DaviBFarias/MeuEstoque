@@ -35,15 +35,15 @@ const HomePage: React.FC = () => {
       <IonContent>
         <IonCard className="welcome-card">
           <img src="/assets/anel-de-diamante.svg" alt=""/>
-          <IonCardHeader>
+          <IonCardHeader class="ion-text-center">
             <IonCardSubtitle>Meu Estoque</IonCardSubtitle>
             <IonCardTitle>S. Almeida Joias</IonCardTitle>
           </IonCardHeader>
         </IonCard>
         <IonCard>
           <IonList lines="none">
-            <IonListHeader>
-              <IonLabel>Acesso Rápido</IonLabel>
+            <IonListHeader class="listaTitulo">
+              <IonLabel class="lblListaTitulo">Acesso Rápido</IonLabel>
             </IonListHeader>
             <IonItem routerLink="home/produtos" routerDirection="none">
               <IonIcon slot="start" color="medium" icon={book} />
@@ -60,6 +60,21 @@ const HomePage: React.FC = () => {
           </IonList>
         </IonCard>
         
+        <IonCard>
+          <IonList lines="none">
+              <IonListHeader class="listaTitulo">
+                <IonLabel class="lblListaTitulo">Informações</IonLabel>
+              </IonListHeader>
+              <IonItem>
+                <IonIcon slot="start" color="medium" icon={book} />
+                <IonLabel>Item...</IonLabel>
+              </IonItem>
+              <IonItem>
+                <IonIcon slot="start" color="medium" icon={book} />
+                <IonLabel>Item...</IonLabel>
+              </IonItem>
+          </IonList>
+        </IonCard>
       </IonContent>
     </IonPage>
   );

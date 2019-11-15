@@ -8,7 +8,8 @@ import Menu from './components/Menu';
 import Home from './pages/Home';
 import Produtos from './pages/Produtos';
 import Cadastrar from './pages/Cadastrar';
-import { home, list, addCircle } from 'ionicons/icons';
+import Agenda from './pages/Agenda';
+import { home, list, addCircle, grid } from 'ionicons/icons';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -44,6 +45,11 @@ const appPages: AppPage[] = [
     title: 'Cadastrar',
     url: '/home/cadastrar',
     icon: addCircle
+  },
+  {
+    title: 'Agenda',
+    url: '/home/agenda',
+    icon: grid
   }
 ];
 
@@ -56,6 +62,7 @@ const App: React.FC = () => (
           <Route path="/home" component={Home} exact={true} />
           <Route path="/home/produtos" component={Produtos} exact={true} />
           <Route path="/home/cadastrar" component={Cadastrar} exact={true} />
+          <Route path="/home/agenda" component={Agenda} exact={true} />
           <Route path="/" render={() => <Redirect to="/home" exact={true} /> } />
         </IonRouterOutlet>
       </IonSplitPane>
